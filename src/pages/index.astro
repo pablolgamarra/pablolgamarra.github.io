@@ -1,0 +1,35 @@
+---
+import LinkButton from '../components/LinkButton.astro';
+import Profile from '../components/Profile.astro';
+import Layout from '../layouts/Layout.astro';
+
+import Github from 'src/assets/svg/github.svg';
+import Instagram from 'src/assets/svg/instagram.svg';
+import LinkedIn from 'src/assets/svg/linkedin.svg';
+import X from 'src/assets/svg/x.svg';
+
+const social = [
+	{ url: 'https://github.com/pablolgamarra', text: 'GitHub', logo: { image: Github, width: 100, height: 100 } },
+	{ url: 'https://linkedin.com/in/pablolgamarra', text: 'LinkedIn', logo: { image: LinkedIn } },
+	{ url: 'https://instagram.com/pablolgamarra', text: 'Instagram', logo: { image: Instagram } },
+	{ url: 'https://x.com/pablolgamarra', text: 'Twitter', logo: { image: X } },
+];
+---
+
+<Layout>
+	<Profile
+		name='Pablo Gamarra'
+		bio='Desarrollador Web | 💻'
+		image='src/assets/svg/profile.svg'
+	/>
+
+	{
+		social.map((social) => (
+			<LinkButton
+				url={social.url}
+				text={social.text}
+				logo={social.logo ? social.logo : undefined}
+			/>
+		))
+	}
+</Layout>

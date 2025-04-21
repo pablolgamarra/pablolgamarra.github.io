@@ -1,0 +1,14 @@
+---
+// src/components/LinkButton.astro
+const { url, text, logo } = Astro.props;
+---
+
+<a
+	href={url}
+	target='_blank'
+	rel='noopener noreferrer'
+	class='block bg-white rounded-xl shadow-md py-3 px-4 my-2 hover:bg-gray-100 transition'
+>
+	<logo.image />
+	<span class='text-gray-800 font-semibold text-lg'>{text}</span>
+</a>
