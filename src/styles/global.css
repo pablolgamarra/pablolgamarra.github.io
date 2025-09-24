@@ -1,1 +1,80 @@
-@import "tailwindcss";
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main-bg{
+    background: #020024;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 33%, rgba(0, 212, 255, 1) 100%);
+}
+
+.main-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main-container h2{
+    font-size: 3rem;
+    color: aliceblue;
+    align-self: center;
+}
+
+.social-media{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.social-media .cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.social-card{
+    width: 200px;
+    height: 100px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+    border: 10px solid rgba(134, 131, 131, 0);
+    border-radius: 1vw;
+    background: #fff;
+    padding: 10px
+}
+
+.social-card span{
+    color: #020024;
+}
+
+.social-card a{
+    color: #020024;
+    text-decoration: none;
+}
+
+.social-link_image{
+    width: 80px;
+    height: 80px;
+}
+
+.profile{
+    color:aliceblue;
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    margin: auto;
+}
+
+.bio-card{
+    margin-bottom: 10px;
+}
+
+.bio-card img{
+    width: 80px;
+    height: 80px;
+}

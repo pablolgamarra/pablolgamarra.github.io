@@ -1,5 +1,5 @@
 {
-  "name": "nebulous-neutron",
+  "name": "pablogamarra-links-hub",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -9,13 +9,6 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@tailwindcss/vite": "^4.1.4",
-    "astro": "^5.7.4",
-    "tailwindcss": "^4.1.4"
-  },
-  "devDependencies": {
-    "@types/node": "^22.14.1",
-    "astro-icon": "^1.1.5",
-    "typescript": "^5.8.3"
+    "astro": "^5.7.4"
   }
 }

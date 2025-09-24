@@ -1,21 +1,16 @@
----
-// src/layouts/BaseLayout.astro
-
-import './src/styles/global.css';
----
-
 <html lang='es'>
 	<head>
+        <title>Pablo Gamarra | Links</title>
 		<meta charset='UTF-8' />
-		<title>Mi LinkHub</title>
 		<meta
 			name='viewport'
 			content='width=device-width, initial-scale=1.0'
 		/>
+        <link rel="stylesheet" href="../styles/global.css"/>
 	</head>
-	<body class='bg-gray-100 text-center font-sans'>
-		<main class='max-w-md mx-auto p-6'>
-			<slot />
+	<body class='main-bg'>
+        <main>
+            <slot />
 		</main>
 	</body>
 </html>
