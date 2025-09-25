@@ -7,9 +7,9 @@ const { name, image, bio } = Astro.props;
         <img
             src={image}
             alt={name}
-            class='w-24 h-24 rounded-full mx-auto border-4 border-white shadow-lg'
+            class='avatar'
         />
         <h1 class='text-xl font-bold mt-2'>{name}</h1>
-        <p class='text-gray-600 text-sm'>{bio}</p>
+        <h2 class='text-gray-600 text-sm'>{bio}</h2>
     </div>
 </div>

@@ -6,8 +6,8 @@ const { url, text, logo } = Astro.props;
 	href={url}
 	target='_blank'
 	rel='noopener noreferrer'
-	class='social-card rounded-xl shadow-md py-3 px-4 my-2 hover:bg-gray-100 transition'
+	class='social-card'
 >
-    <img class="social-link_image" src={logo.image.src} />
+    <img class="icon" src={logo.image.src} />
 	<span class='text-gray-800 font-semibold text-lg'>{text}</span>
 </a>
