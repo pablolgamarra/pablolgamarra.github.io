@@ -1,33 +1,26 @@
 ---
 import Footer from '../components/Footer.astro';
+
+const {
+	title = 'Pablo Gamarra | Desarrollador Web en Paraguay',
+	description = 'Desarrollo sitios y aplicaciones web a medida. Contáctame para tu proyecto.',
+} = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site);
 ---
 
 <html lang='es'>
 	<head>
-		<title>Pablo Gamarra | Links</title>
-		<meta charset='UTF-8' />
-		<meta
-			name='viewport'
-			content='width=device-width, initial-scale=1.0'
-		/>
-		<!-- Google Fonts -->
-		<link
-			rel='preconnect'
-			href='https://fonts.googleapis.com'
-		/>
-		<link
-			rel='preconnect'
-			href='https://fonts.gstatic.com'
-			crossorigin
-		/>
-		<link
-			href='https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap'
-			rel='stylesheet'
-		/>
-		<link
-			href='https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap'
-			rel='stylesheet'
-		/>
+		<meta charset='utf-8' />
+		<meta name='viewport' content='width=device-width, initial-scale=1' />
+		<title>{title}</title>
+		<meta name='description' content={description} />
+		<link rel='canonical' href={canonical} />
+		<meta property='og:type' content='website' />
+		<meta property='og:title' content={title} />
+		<meta property='og:description' content={description} />
+		<meta property='og:image' content={new URL('/images/og.png', Astro.site)} />
+		<meta name='twitter:card' content='summary_large_image' />
+		<link rel='icon' href='/favicon.svg' type='image/svg+xml' />
 	</head>
 	<body>
 		<main class='container'>
