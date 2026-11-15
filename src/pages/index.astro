@@ -12,17 +12,17 @@ import Arrow from '../assets/svg/arrow.svg';
 import Email from '../assets/svg/email.svg';
 import WhatsApp from '../assets/svg/whatsapp.svg';
 
-const WHATSAPP = '595XXXXXXXXX'; // tu número, formato internacional sin + ni espacios
+const WHATSAPP = '595993373436'; // En formato internacional para que WA.ME funcione
 const waMsg = encodeURIComponent('Hola Pablo, vi tu página y me gustaría consultarte sobre un proyecto.');
-const mailSubject = encodeURIComponent('Consulta sobre proyecto web');
+const mailSubject = encodeURIComponent('Consulta sobre proyecto');
 
-// Acciones principales: lo que querés que haga un cliente
+// Acciones principales
 const contact = [
 	{
 		url: `https://wa.me/${WHATSAPP}?text=${waMsg}`,
 		text: 'Escribime por WhatsApp',
 		variant: 'primary',
-		logo: { image: WhatsApp /* cambiar por WhatsApp */ },
+		logo: { image: WhatsApp },
 	},
 	{
 		url: `mailto:pablogamarra.dev@gmail.com?subject=${mailSubject}`,
@@ -47,9 +47,9 @@ const social = [
 ];
 
 const services = [
-	{ title: 'Sitios web y landing pages', desc: 'Rápidos, adaptables a móvil y listos para que te encuentren.' },
-	{ title: 'Aplicaciones web a medida', desc: 'Sistemas de gestión, paneles y automatización de procesos.' },
-	{ title: 'Mejora de sitios existentes', desc: 'Rendimiento, diseño y mantenimiento de lo que ya tenés.' },
+	{ title: 'Sitios y aplicaciones web para posicionamiento', desc: 'Rápidos, adaptables a móvil y listos para que te encuentren.' },
+	{ title: 'Sistemas completos', desc: 'Sistemas de gestión, paneles y automatización de procesos.' },
+	{ title: 'Configuracion o armado de redes informaticas', desc: 'Rendimiento, diseño y mantenimiento.' },
 ];
 ---
 
@@ -58,7 +58,7 @@ const services = [
 		name='Pablo Gamarra'
 		bio=`Ingeniero en Informática\nDesarrollador de software y aplicaciones web\n`
 		tagline='Creo sitios y aplicaciones para negocios y profesionales. Disponible para nuevos proyectos.'
-		image='/images/profile.webp'
+		image='/images/profile1.webp'
 	/>
 
 	<section class='links' aria-label='Contacto'>
